@@ -23,12 +23,13 @@ p.container-movimentos {
   padding-left: 30px;
   margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 input.movimentos[type="number"] {
   background-color: white;
   margin-left: 30px;
-  padding: 10px;
+  padding: 8px;
   border: 1px solid #4a69bd;
   border-radius: 4px;
   font-family: Arial, Helvetica, sans-serif;

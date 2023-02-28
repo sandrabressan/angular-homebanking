@@ -3,6 +3,7 @@ import { ContaService } from '../conta.service';
 import { Movimento } from './Movimento';
 import { AuthService } from '../auth/auth.service';
 import { ActivatedRoute } from '@angular/router';
+import { LogService } from '../shared/log.service';
 
 @Component({
   selector: 'app-conta',
@@ -17,7 +18,7 @@ export class ContaComponent {
   novoValor : number;
   saldo: number
 
-  constructor(private service: ContaService, private route: ActivatedRoute, public authService: AuthService) {}
+  constructor(private service: ContaService, private route: ActivatedRoute, public authService: AuthService, private logger: LogService) {}
 
   ngOnInit() {
     this.subscribe= this.route.params.subscribe(params => {
@@ -31,7 +32,6 @@ export class ContaComponent {
   ngOnDestroy() {
     this.subscribe.unsubscribe()
   }
-
 
   saveMovimento(operacao='credito'){ //método que salva novas entradas na lista de movimentos
     if(this.novoValor){
@@ -49,6 +49,7 @@ export class ContaComponent {
       this.movimentos.push(movimento);
       this.novoValor = 0;
       this.revMovimentos = this.movimentos.slice().reverse()
+      this.logger.info(`Transação realizada com sucesso por ${this.clientName}`)
     }else{
       alert("Por favor insira um valor");
     }

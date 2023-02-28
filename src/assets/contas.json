@@ -4,7 +4,7 @@
         {
             "index": 10,
             "data":"27/02/2023",
-            "hora": "13:00",
+            "hora": "13:05",
             "valor": -50,
             "operacao": "debito",
             "isCompleted": true
@@ -12,7 +12,7 @@
         {
             "index": 9,
             "data":"27/02/2023",
-            "hora": "12:00",
+            "hora": "12:30",
             "valor": 100,
             "operacao": "credito",
             "isCompleted": true
@@ -20,7 +20,7 @@
         {
             "index": 8,
             "data":"27/02/2023",
-            "hora": "11:00",
+            "hora": "11:23",
             "valor": -500,
             "operacao": "debito",
             "isCompleted": true
@@ -28,7 +28,7 @@
         {
             "index": 7,
             "data":"27/02/2023",
-            "hora": "10:00",
+            "hora": "10:56",
             "valor": 1000,
             "operacao": "credito",
             "isCompleted": true
@@ -36,7 +36,7 @@
         {
             "index": 6,
             "data":"27/02/2023",
-            "hora": "9:00",
+            "hora": "9:18",
             "valor": 500,
             "operacao": "credito",
             "isCompleted": true
@@ -44,7 +44,7 @@
         {
             "index": 5,
             "data":"27/02/2023",
-            "hora": "8:00",
+            "hora": "8:03",
             "valor": -250,
             "operacao": "debito",
             "isCompleted": true
@@ -52,7 +52,7 @@
         {
             "index": 4,
             "data":"26/02/2023",
-            "hora": "13:00",
+            "hora": "13:25",
             "valor": 50,
             "operacao": "credito",
             "isCompleted": true
@@ -60,7 +60,7 @@
         {
             "index": 3,
             "data":"26/02/2023",
-            "hora": "12:00",
+            "hora": "12:45",
             "valor": 300,
             "operacao": "credito",
             "isCompleted": true
@@ -68,7 +68,7 @@
         {
             "index": 2,
             "data":"26/02/2023",
-            "hora": "11:00",
+            "hora": "11:08",
             "valor": -50,
             "operacao": "debito",
             "isCompleted": true
@@ -76,7 +76,7 @@
         {
             "index": 1,
             "data":"26/02/2023",
-            "hora": "10:00",
+            "hora": "10:54",
             "valor": 100,
             "operacao": "credito",
             "isCompleted": true
@@ -87,7 +87,7 @@
         {
             "index": 10,
             "data":"27/02/2023",
-            "hora": "12:00",
+            "hora": "12:28",
             "valor": 50,
             "operacao": "credito",
             "isCompleted": true
@@ -95,7 +95,7 @@
         {
             "index": 9,
             "data":"27/02/2023",
-            "hora": "11:00",
+            "hora": "11:07",
             "valor": 1000,
             "operacao": "credito",
             "isCompleted": true
@@ -103,7 +103,7 @@
         {
             "index": 8,
             "data":"27/02/2023",
-            "hora": "10:00",
+            "hora": "10:12",
             "valor": -500,
             "operacao": "debito",
             "isCompleted": true
@@ -111,7 +111,7 @@
         {
             "index": 7,
             "data":"27/02/2023",
-            "hora": "9:00",
+            "hora": "9:07",
             "valor": -1000,
             "operacao": "debito",
             "isCompleted": true
@@ -119,7 +119,7 @@
         {
             "index": 6,
             "data":"27/02/2023",
-            "hora": "8:00",
+            "hora": "8:12",
             "valor": 150,
             "operacao": "credito",
             "isCompleted": true
@@ -127,7 +127,7 @@
         {
             "index": 5,
             "data":"26/02/2023",
-            "hora": "13:00",
+            "hora": "13:37",
             "valor": -100,
             "operacao": "debito",
             "isCompleted": true
@@ -135,7 +135,7 @@
         {
             "index": 4,
             "data":"26/02/2023",
-            "hora": "12:00",
+            "hora": "12:55",
             "valor": -150,
             "operacao": "debito",
             "isCompleted": true
@@ -143,7 +143,7 @@
         {
             "index": 3,
             "data":"26/02/2023",
-            "hora": "11:00",
+            "hora": "11:59",
             "valor": 100,
             "operacao": "credito",
             "isCompleted": true
@@ -151,7 +151,7 @@
         {
             "index": 2,
             "data":"26/02/2023",
-            "hora": "10:00",
+            "hora": "10:03",
             "valor": -50,
             "operacao": "debito",
             "isCompleted": true
@@ -159,7 +159,7 @@
         {
             "index": 1,
             "data":"26/02/2023",
-            "hora": "13:00",
+            "hora": "13:29",
             "valor": 100,
             "operacao": "credito",
             "isCompleted": true

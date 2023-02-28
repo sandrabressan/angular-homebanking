@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="banner">
+      <h2 class="banner">Autoatendimento</h2>
+  </div>
+  <div class="banner2">
+      <div class="one"></div>
+      <div class="two">
+          <div class="card">
+              <div class="login">
+                  <form action="Itens.php" method="post" name="login">
+                  <h3 class="login">Login</h3>
+                  <p class="login">
+                      <input #agencia class="login"
+                      type="text"
+                      name="agencia"
+                      id="agencia"
+                      placeholder="Agência"
+                      />
+                  </p>
+                  <p class="login">
+                      <input #conta class="login"
+                          type="text"
+                          name="conta"
+                          id="conta"
+                          placeholder="Conta com dígito"
+                      />
+                      </p>
+                  <p class="login">
+                      <input #senha class="login"
+                      type="password"
+                      name="senha"
+                      id="senha"
+                      placeholder="Senha de 8 dígitos"
+                      />
+                  </p>
+                  <p class="login">
+                      <input class="login" type="submit" value="Entrar" (click)="authenticate()" />
+                  </p>
+                  </form>
+                  <h4 class="login">Ainda não tem conta?</h4>
+                  <a class="login" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Abra sua conta</a>
+              </div>
+          </div>
+      </div>
+      <div class="three"></div>
+  </div>
+</div>

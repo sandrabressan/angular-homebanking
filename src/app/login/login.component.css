@@ -1,0 +1,80 @@
+.banner {
+    display: grid;
+    color: white;
+    background: #4a69bd;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
+   text-align: center;
+  }
+
+.banner2 {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto 300px auto;
+}
+
+.card {
+    padding: 3px;
+    height: 400px;
+    width: 300px;
+    background-color: #e3fafe;
+}
+
+.login {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+}
+
+input.login[type="text"] {
+    width: 50%;
+    background-color: white;
+    padding: 8px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+input.login[type="password"] {
+    width: 50%;
+    background-color: white;
+    padding: 8px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+input.login[type="submit"] {
+    width: 20%;
+    background-color: #00fa9a;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h3.login {
+    margin-left: 10px;
+    color: #4a69bd;
+}
+
+p.login {
+    margin-left: 10px;
+}
+
+h4.login {
+    margin-left: 10px;
+    color: royalblue;
+}
+a.login {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a.login:hover {
+    text-decoration: underline;
+    margin-left: 10px;
+}

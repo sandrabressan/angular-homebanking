@@ -1,0 +1,168 @@
+{
+    "Maria":
+    [
+        {
+            "index": 10,
+            "data":"27/02/2023",
+            "hora": "13:00",
+            "valor": -50,
+            "operacao": "debito",
+            "isCompleted": true
+        },
+        {
+            "index": 9,
+            "data":"27/02/2023",
+            "hora": "12:00",
+            "valor": 100,
+            "operacao": "credito",
+            "isCompleted": true
+        },
+        {
+            "index": 8,
+            "data":"27/02/2023",
+            "hora": "11:00",
+            "valor": -500,
+            "operacao": "debito",
+            "isCompleted": true
+        },
+        {
+            "index": 7,
+            "data":"27/02/2023",
+            "hora": "10:00",
+            "valor": 1000,
+            "operacao": "credito",
+            "isCompleted": true
+        },
+        {
+            "index": 6,
+            "data":"27/02/2023",
+            "hora": "9:00",
+            "valor": 500,
+            "operacao": "credito",
+            "isCompleted": true
+        },
+        {
+            "index": 5,
+            "data":"27/02/2023",
+            "hora": "8:00",
+            "valor": -250,
+            "operacao": "debito",
+            "isCompleted": true
+        },
+        {
+            "index": 4,
+            "data":"26/02/2023",
+            "hora": "13:00",
+            "valor": 50,
+            "operacao": "credito",
+            "isCompleted": true
+        },
+        {
+            "index": 3,
+            "data":"26/02/2023",
+            "hora": "12:00",
+            "valor": 300,
+            "operacao": "credito",
+            "isCompleted": true
+        },
+        {
+            "index": 2,
+            "data":"26/02/2023",
+            "hora": "11:00",
+            "valor": -50,
+            "operacao": "debito",
+            "isCompleted": true
+        },
+        {
+            "index": 1,
+            "data":"26/02/2023",
+            "hora": "10:00",
+            "valor": 100,
+            "operacao": "credito",
+            "isCompleted": true
+        }
+    ],
+    "José":
+    [
+        {
+            "index": 10,
+            "data":"27/02/2023",
+            "hora": "12:00",
+            "valor": 50,
+            "operacao": "credito",
+            "isCompleted": true
+        },
+        {
+            "index": 9,
+            "data":"27/02/2023",
+            "hora": "11:00",
+            "valor": 1000,
+            "operacao": "credito",
+            "isCompleted": true
+        },
+        {
+            "index": 8,
+            "data":"27/02/2023",
+            "hora": "10:00",
+            "valor": -500,
+            "operacao": "debito",
+            "isCompleted": true
+        },
+        {
+            "index": 7,
+            "data":"27/02/2023",
+            "hora": "9:00",
+            "valor": -1000,
+            "operacao": "debito",
+            "isCompleted": true
+        },
+        {
+            "index": 6,
+            "data":"27/02/2023",
+            "hora": "8:00",
+            "valor": 150,
+            "operacao": "credito",
+            "isCompleted": true
+        },
+        {
+            "index": 5,
+            "data":"26/02/2023",
+            "hora": "13:00",
+            "valor": -100,
+            "operacao": "debito",
+            "isCompleted": true
+        },
+        {
+            "index": 4,
+            "data":"26/02/2023",
+            "hora": "12:00",
+            "valor": -150,
+            "operacao": "debito",
+            "isCompleted": true
+        },
+        {
+            "index": 3,
+            "data":"26/02/2023",
+            "hora": "11:00",
+            "valor": 100,
+            "operacao": "credito",
+            "isCompleted": true
+        },
+        {
+            "index": 2,
+            "data":"26/02/2023",
+            "hora": "10:00",
+            "valor": -50,
+            "operacao": "debito",
+            "isCompleted": true
+        },
+        {
+            "index": 1,
+            "data":"26/02/2023",
+            "hora": "13:00",
+            "valor": 100,
+            "operacao": "credito",
+            "isCompleted": true
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+.banner {
+    display: grid;
+    color: white;
+    background: #4a69bd;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-weight: bold;
+   text-align: center;
+  }
+
+  table.movimentos {
+    color: royalblue;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-movimentos {
+    display: grid;
+    text-decoration: none;
+  }
+
+  

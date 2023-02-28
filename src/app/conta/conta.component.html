@@ -1,0 +1,46 @@
+<style>
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+</style>
+<div class="banner">
+        <h1>Lista de Movimentos</h1>
+</div>
+        <div class="container-movimentos">
+          <p>
+              Olá, {{clientName}}
+          </p>
+          <p> Seu saldo é: {{saldo.toFixed(2)}}</p>
+                <div class = "movimentos">
+                        <input type="number" placeholder="Insira o valor" aria-describedby="button-addon2"[(ngModel)]="novoValor">
+                        <button type="button" id="button-addon2" (click)="saveMovimento(); calcSaldo()"> Depositar</button>
+                        <button type="button" id="button-addon2" (click)="saveMovimento('debito'); calcSaldo()"> Retirar</button>
+                </div>
+                <table>
+                   <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Hora</th>
+                            <th scope="col">Valor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let movimento of revMovimentos | slice:0:10; let i=index;">
+                                <th scope="row">{{movimento.index}}</th>
+                                <td>{{movimento.data}}</td>
+                                <td>{{movimento.hora}}</td>
+                                <td [ngStyle]="{'color': (movimento.operacao=='debito') ? 'red' : 'green'}">
+                                  {{movimento.valor.toFixed(2)}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+      </div>
+
+
+
+
+
+

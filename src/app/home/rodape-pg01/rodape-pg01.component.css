@@ -1,0 +1,49 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px 100px;
+    color: white;
+    background: #4a69bd;
+    padding-bottom: 20px;
+}
+
+.banner {
+    display: grid;
+    grid-auto-columns: minmax(820px, auto);
+    grid-row: 1/2;
+}
+h3.banner {
+    padding-left: 10px;
+    align-self: start;
+}
+p.banner {
+    align-self: end;
+    grid-column: 2/2;
+}
+
+.banner2 {
+    display: grid;
+    grid-template-columns: repeat(9, 130px);
+    height: 100%;
+    width: 100%;
+    grid-row: 2/2;
+}
+p.banner2 {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    justify-self: stretch;
+}
+
+.banner3 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    grid-template-columns: repeat(4, 200px [col-start]);
+    grid-column: 1/2;
+}
+p.banner3 {
+    padding-left: 10px;
+}

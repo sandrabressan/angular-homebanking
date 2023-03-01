@@ -6,32 +6,31 @@
   <p class="container-movimentos"> Saldo: R$ {{saldo.toFixed(2)}}</p>
   <div class = "movimentos">
     <input class = "movimentos" type="number" placeholder="Insira o valor (R$)" aria-describedby="button-addon2"[(ngModel)]="novoValor">
-    <button class = "movimentos" type="button" id="button-add"  (click)="saveMovimento(); calcSaldo()"> Depositar</button>
-    <button class = "movimentos" type="button" id="button-remove"  (click)="saveMovimento('debito'); calcSaldo()"> Retirar</button>
+    <button class = "movimentos" type="submit" id="button-add" (click)="saveMovimento(); calcSaldo()"> Depositar</button>
+    <button class = "movimentos" type="submit" id="button-remove" (click)="saveMovimento('debito'); calcSaldo()"> Retirar</button>
   </div>
-  <table class = "movimentos">
-    <thead>
-      <tr>
-        <th scope="col"> </th>
-        <th scope="col">Data</th>
-        <th scope="col">Hora</th>
-        <th scope="col">Valor</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let movimento of revMovimentos | slice:0:10; let i=index;">
-       <th scope="row">{{movimento.index}}</th>
-        <td>{{movimento.data}}</td>
-        <td>{{movimento.hora}}</td>
-        <td [ngStyle]="{'color': (movimento.operacao=='debito') ? 'red' : 'black'}">
-          {{movimento.valor.toFixed(2)}}</td>
-      </tr>
-    </tbody>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef=" ">
+      <th mat-header-cell *matHeaderCellDef> </th>
+      <td mat-cell *matCellDef="let movimento"> {{movimento.index}} </td>
+    </ng-container>
+    <ng-container matColumnDef="data">
+      <th mat-header-cell *matHeaderCellDef>Data</th>
+      <td mat-cell *matCellDef="let movimento"> {{movimento.data}} </td>
+    </ng-container>
+    <ng-container matColumnDef="hora">
+      <th mat-header-cell *matHeaderCellDef>Hora</th>
+      <td mat-cell *matCellDef="let movimento"> {{movimento.hora}} </td>
+    </ng-container>
+    <ng-container matColumnDef="valor">
+      <th mat-header-cell *matHeaderCellDef>Valor</th>
+      <td mat-cell *matCellDef="let movimento"> {{movimento.valor}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-  <a routerLink="/conta/:clientName" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="logout()">Log Out</a>
+  <a routerLink="/conta/:clientName" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="logout()">Log off</a>
 </div>
-
-
 
 
 

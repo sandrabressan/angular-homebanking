@@ -5,7 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatListModule} from '@angular/material/list'; 
-import { MatButtonModule} from '@angular/material/button'; 
+import { MatButtonModule} from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppComponent } from './app.component';
 import { BannerPg01Component } from './home/banner-pg01/banner-pg01.component';
@@ -37,7 +38,8 @@ import { LogPublishersService } from "./shared/log-publishers.service";
     FormsModule,
     ReactiveFormsModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule
   ],
   providers: [ContaService, LogService, LogPublishersService],
   bootstrap: [AppComponent]

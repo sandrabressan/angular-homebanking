@@ -12,7 +12,7 @@
 
 ## Sobre
 <br>
-Aplicativo Web de homebanking desenvolvido com o framework Angular, apresentando as funcionalidades de login, lista de movimentos, depositar e retirar fundos e serviços de autenticação e log.
+Aplicativo Web de homebanking desenvolvido com o framework Angular, apresentando as funcionalidades de login, lista de movimentos, depositar e retirar fundos, serviços de autenticação e log. 
 
 <br>
 

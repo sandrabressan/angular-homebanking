@@ -20,7 +20,7 @@ export class ContaComponent {
 
   constructor(private service: ContaService, private route: ActivatedRoute, public authService: AuthService, private logger: LogService) {}
 
-  ngOnInit() {
+  ngOnInit() {//Carrega o histórico e calcula o saldo ao inicializar.
     this.subscribe= this.route.params.subscribe(params => {
       this.clientName = params['clientName'];
     });
@@ -33,7 +33,7 @@ export class ContaComponent {
     this.subscribe.unsubscribe()
   }
 
-  saveMovimento(operacao='credito'){ //método que salva novas entradas na lista de movimentos
+  saveMovimento(operacao='credito'){ //método que salva novas entradas na lista de movimentos.
     if(this.novoValor){
       let movimento = new Movimento();
       movimento.index = Object.keys (this.movimentos).length + 1
@@ -55,15 +55,15 @@ export class ContaComponent {
     }
   }
 
-  getDate() { // retorna a data local
+  getDate() { // retorna a data local.
     return new Date().toLocaleDateString();
   }
 
-  getTime(){ // retorna o formato de hora nos países que o português é o idioma oficial
+  getTime(){ // retorna a hora local.
     return new Date().toLocaleTimeString('en-US', {hour12: false, hour: "numeric", minute:"numeric"}); 
   }
 
-  calcSaldo(){// calcular o saldo da lista de movimentos
+  calcSaldo(){// calcular o saldo da lista de movimentos.
     let valores: number[] = []
     Object.entries(this.movimentos).forEach(
       ([key, value]) => {

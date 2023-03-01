@@ -6,17 +6,17 @@ import { LogPublisher, LogConsole, LogLocalStorage } from "./log-publisher";
   providedIn: 'root'
 })
 export class LogPublishersService {
-  // Public properties
+  // Public properties.
   publishers: LogPublisher[] = [];
 
   constructor() {
     this.buildPublishers();
   }
   
-  buildPublishers(): void { // Constroi array de publishers
-      // Cria instância da classe LogConsole
+  buildPublishers(): void { // Constroi array de publishers.
+      // Cria instância da classe LogConsole.
       this.publishers.push(new LogConsole());
-      // Cria instância da classe LogLocalStorage
+      // Cria instância da classe LogLocalStorage.
       this.publishers.push(new LogLocalStorage());
   }
 }

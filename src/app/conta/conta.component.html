@@ -6,13 +6,13 @@
   <p class="container-movimentos"> Saldo: R$ {{saldo.toFixed(2)}}</p>
   <div class = "movimentos">
     <input class = "movimentos" type="number" placeholder="Insira o valor (R$)" aria-describedby="button-addon2"[(ngModel)]="novoValor">
-    <button class = "movimentos" type="submit" id="button-add" (click)="saveMovimento(); calcSaldo()"> Depositar</button>
-    <button class = "movimentos" type="submit" id="button-remove" (click)="saveMovimento('debito'); calcSaldo()"> Retirar</button>
+    <button class = "movimentos" type="button" id="button-add"  (click)="saveMovimento(); calcSaldo()"> Depositar</button>
+    <button class = "movimentos" type="button" id="button-remove"  (click)="saveMovimento('debito'); calcSaldo()"> Retirar</button>
   </div>
   <table class = "movimentos">
     <thead>
       <tr>
-        <th scope="col">#</th>
+        <th scope="col"> </th>
         <th scope="col">Data</th>
         <th scope="col">Hora</th>
         <th scope="col">Valor</th>
@@ -20,7 +20,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let movimento of revMovimentos | slice:0:10; let i=index;">
-        <th scope="row">{{movimento.index}}</th>
+       <th scope="row">{{movimento.index}}</th>
         <td>{{movimento.data}}</td>
         <td>{{movimento.hora}}</td>
         <td [ngStyle]="{'color': (movimento.operacao=='debito') ? 'red' : 'black'}">

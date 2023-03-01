@@ -34,7 +34,7 @@
                       />
                   </p>
                   <p class="login">
-                      <input class="login" type="submit" value="Entrar" (click)="authenticate()" />
+                      <button mat-button class="login" value="Entrar" (click)="authenticate()" ></button>
                   </p>
                   </form>
                   <h4 class="login">Ainda não tem conta?</h4>
@@ -45,4 +45,5 @@
       <div class="three"></div>
   </div>
   <a class="login" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+  <button mat-button routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"> Teste</button>
 </div>

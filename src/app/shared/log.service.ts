@@ -19,7 +19,7 @@ export class LogService {
     publishers: LogPublisher[];
 
     constructor(private publishersService: LogPublishersService) {
-        // Inicializa publishers
+        // Inicializa publishers.
         this.publishers = this.publishersService.publishers;
     }
 
@@ -54,7 +54,7 @@ export class LogService {
             entry.level = level;
             entry.extraInfo = params;
             entry.logWithDate = this.logWithDate;
-            for (let logger of this.publishers) { // itera sobre array de publishers
+            for (let logger of this.publishers) { // itera sobre array de publishers.
                 logger.log(entry).subscribe(response => {});
             }
         }
@@ -96,11 +96,11 @@ export class LogEntry {
     private formatParams(params: any[]): string {
         let ret: string = params.join(",");
         
-        // Confere se existe pelo menos um objeto no array
+        // Confere se existe pelo menos um objeto no array.
         if (params.some(p => typeof p == "object")) {
             ret = "";
             
-            // Constroi string separada com vírgula
+            // Constroi string separada com vírgula.
             for (let item of params) {
                 ret += JSON.stringify(item) + ",";
             }

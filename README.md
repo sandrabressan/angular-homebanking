@@ -1,27 +1,76 @@
 # Homebanking
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+## Sumário
 
-## Development server
+<br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Sobre](#Sobre)
+- [Instalação](#Instalação)
+- [Utilização](#Utilização)
 
-## Code scaffolding
+<br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Sobre
+<br>
+Aplicativo Web de homebanking desenvolvido com o framework Angular, apresentando as funcionalidades de login, lista de movimentos, depositar e retirar fundos e serviços de autenticação e log.
 
-## Build
+<br>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalação
+<br>
 
-## Running unit tests
+Instalar a versão mais recente do Node [Node](https://nodejs.org/en/).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Instalar o TypeScript:
 
-## Running end-to-end tests
+```
+$ npm install -g typescript
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Instalar o Angular:
+```
+$ npm install -g @angular/cli
+```
 
-## Further help
+Baixar o projeto e instalar dependências:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+git clone
+cd homebanking
+npm install
+```
+<br>
+
+## Utilização
+<br>
+Na página principal clicar em **Acessar sua Conta**, você será redirecionado para a página de **Login**.
+
+A página de **Lista de Movimentos** é protegida por um serviço de autenticação.
+
+Atualmente há 02 usuários cadastrados: Maria e José. Para entrar com estes usuários, é preciso utilizar as seguintes credenciais:
+
+Maria: 
+
+```
+Agência: 1234
+Conta: 12345678-9
+Senha: 1234qwer
+```
+José:
+
+```
+Agência: 5678
+Conta: 98765432-1
+Senha: qwer1234
+```
+Utilizando qualquer uma destas credenciais você será direcionado para a página **Lista de Movimentos**, onde é mostrado o saldo atual e histórico de transações.
+
+A **Lista de Movimentos** carrega o histórico de transações do usuário usando o serviço **ContaService**, que simula uma requisição para um endpoint HTTP e exibe os 10 últimos movimentos.
+
+Para depositar ou retirar fundos, basta inserir um valor numérico no campo **Insira o valor (R$)** e clicar em **Depositar** ou **Retirar**.
+
+Para fazer Log Out clique em **Log Out**.
+
+As tentativas de login e transações são registradas por meio do serviço de log, o qual imprime no console e salva os logs criptografados no local storage do browser.
+
+

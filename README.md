@@ -35,7 +35,7 @@ $ npm install -g @angular/cli
 Baixar o projeto e instalar dependências:
 
 ```
-git clone
+git clone git@github.com:sandrabressan/homebanking.git
 cd homebanking
 npm install
 ```
@@ -43,6 +43,14 @@ npm install
 
 ## Utilização
 <br>
+
+No terminal rodar o comando:
+
+```
+$ ng serve
+```
+Abrir o browser e navegar para o endereço   http://localhost:4200.
+
 Na página principal clicar em **Acessar sua Conta**, você será redirecionado para a página de **Login**.
 
 A página de **Lista de Movimentos** é protegida por um serviço de autenticação.

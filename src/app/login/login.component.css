@@ -1,11 +1,12 @@
 .banner {
     display: grid;
     color: white;
-    background: #4a69bd;
+    background:  #000080;
     padding-top: 3px;
     padding-bottom: 3px;
+    font-family:  Arial, Helvetica, sans-serif;
     font-weight: bold;
-   text-align: center;
+    text-align: center;
   }
 
 .banner2 {
@@ -15,14 +16,15 @@
 }
 
 .card {
+    margin-top: 20px;
     padding: 3px;
     height: 400px;
     width: 300px;
-    background-color: #e3fafe;
+    background-color: #daeefe;
 }
 
 .login {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family:  Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -32,7 +34,9 @@ input.login[type="text"] {
     padding: 8px;
     margin: 8px 0;
     border: none;
+    outline: 1px #00288b solid;
     border-radius: 4px;
+    color: #0000CD;
 }
 
 input.login[type="password"] {
@@ -41,11 +45,13 @@ input.login[type="password"] {
     padding: 8px;
     margin: 8px 0;
     border: none;
+    outline: 1px #00288b solid;
     border-radius: 4px;
+    color: #0000CD;
 }
 
-input.login[type="submit"] {
-    width: 20%;
+button.login {
+    width: 40%;
     background-color: #00fa9a;
     color: white;
     font-weight: bold;
@@ -58,7 +64,7 @@ input.login[type="submit"] {
 
 h3.login {
     margin-left: 10px;
-    color: #4a69bd;
+    color: #0000CD;
 }
 
 p.login {
@@ -67,7 +73,7 @@ p.login {
 
 h4.login {
     margin-left: 10px;
-    color: royalblue;
+    color: #0000CD;
 }
 a.login {
     text-decoration: none;
@@ -78,3 +84,4 @@ a.login:hover {
     text-decoration: underline;
     margin-left: 10px;
 }
+

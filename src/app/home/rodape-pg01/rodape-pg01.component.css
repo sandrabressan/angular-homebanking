@@ -2,14 +2,17 @@
     display: grid;
     grid-template-columns: 200px 100px;
     color: white;
-    background: #4a69bd;
+    background:  #000080;
     padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
 }
 
 .banner {
     display: grid;
-    grid-auto-columns: minmax(820px, auto);
+    grid-auto-columns: minmax(500px, auto);
     grid-row: 1/2;
+    text-align: center;
 }
 h3.banner {
     padding-left: 10px;
@@ -22,7 +25,7 @@ p.banner {
 
 .banner2 {
     display: grid;
-    grid-template-columns: repeat(9, 130px);
+    grid-template-columns: repeat(5, 130px);
     height: 100%;
     width: 100%;
     grid-row: 2/2;

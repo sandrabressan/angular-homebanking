@@ -3,13 +3,13 @@
 </div>
 <div class="container-movimentos">
   <p class="container-movimentos"> Olá, {{clientName}}!</p>
-  <p class="container-movimentos"> Saldo: R$ {{saldo.toFixed(2)}}</p>
+  <p class="container-movimentos"> Saldo: € {{saldo.toFixed(2)}}</p>
   <div class = "movimentos">
-    <input class = "movimentos" type="number" placeholder="Insira o valor (R$)" aria-describedby="button-addon2"[(ngModel)]="novoValor">
+    <input class = "movimentos" type="number" placeholder="Insira o valor(€)" aria-describedby="button-addon2"[(ngModel)]="novoValor">
     <button class = "movimentos" type="submit" id="button-add" (click)="saveMovimento(); calcSaldo()"> Depositar</button>
     <button class = "movimentos" type="submit" id="button-remove" (click)="saveMovimento('debito'); calcSaldo()"> Retirar</button>
   </div>
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" class = "movimentos">
     <ng-container matColumnDef=" ">
       <th mat-header-cell *matHeaderCellDef> </th>
       <td mat-cell *matCellDef="let movimento"> {{movimento.index}} </td>

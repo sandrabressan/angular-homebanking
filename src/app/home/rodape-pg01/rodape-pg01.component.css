@@ -24,21 +24,22 @@ p.banner {
 }
 
 .banner2 {
-    display: grid;
-    grid-template-columns: repeat(5, 130px);
-    height: 100%;
-    width: 100%;
     grid-row: 2/2;
-}
-p.banner2 {
     display: flex;
-    padding-left: 30px;
-    padding-right: 30px;
-    align-items: center;
-    text-align: justify;
-    justify-content: center;
-    justify-self: stretch;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    justify-content: space-between;
 }
+
+.grid-container {
+    grid-row: 2/2;
+    padding-left: 10px;
+    display: grid;
+    gap: 10px;
+    grid-auto-columns: 260px;
+    grid-auto-flow: column;
+ }
 
 .banner3 {
     display: flex;

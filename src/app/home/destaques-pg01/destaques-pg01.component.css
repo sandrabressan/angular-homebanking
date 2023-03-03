@@ -1,10 +1,10 @@
 .container {
     display: grid;
-    background-image: url('../../../assets/cartaodecredito.jpeg');
+    background-image: url('../../../assets/casal.jpeg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
     background-attachment: fixed;
-    margin: 5px;
+    margin: 1px;
     height: 400px;
 }
 

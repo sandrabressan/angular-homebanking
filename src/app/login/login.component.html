@@ -1,6 +1,9 @@
 <div class="container">
   <div class="banner">
       <h2 class="banner">Autoatendimento</h2>
+      <a class="banner" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <mat-icon>home</mat-icon>
+      </a>
   </div>
   <div class="banner2">
       <div class="one"></div>
@@ -34,7 +37,7 @@
                       />
                   </p>
                   <p class="login">
-                      <button mat-button class="login" value="Entrar" (click)="authenticate()" ></button>
+                      <button mat-button class="login" (click)="authenticate()">Entrar</button>
                   </p>
                   </form>
                   <h4 class="login">Ainda não tem conta?</h4>
@@ -44,5 +47,5 @@
       </div>
       <div class="three"></div>
   </div>
-  <button mat-button routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"> Home</button>
+  
 </div>

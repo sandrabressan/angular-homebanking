@@ -2,12 +2,26 @@
     display: grid;
     color: white;
     background:  #000080;
-    padding-top: 3px;
-    padding-bottom: 3px;
     font-family:  Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
-  }
+    grid-template-columns: 42% 25% auto;
+}
+
+h2.banner {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+a.banner {
+    text-decoration: none;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+a.banner:hover {
+    text-decoration: underline;
+}
 
 .banner2 {
     margin: 20px;

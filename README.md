@@ -36,7 +36,7 @@ Baixar o projeto e instalar dependências:
 
 ```
 git clone git@github.com:sandrabressan/homebanking.git
-cd homebanking
+cd homebanking-main
 npm install
 ```
 <br>

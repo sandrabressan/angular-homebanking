@@ -32,8 +32,9 @@ git clone git@github.com:sandrabressan/homebanking.git
 cd homebanking-main
 npm install
 ```
-<br>
+
 ## Usage
+
 <br>
 
 In the terminal, run the command:

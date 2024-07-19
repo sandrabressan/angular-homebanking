@@ -12,7 +12,7 @@ Homebanking web application developed with the Angular framework, featuring func
 
 ## Installation
 
-Install the latest version of Node [Node](https://nodejs.org/en/).
+Install the latest version of [Node](https://nodejs.org/en/).
 
 Install TypeScript:
 
@@ -33,7 +33,6 @@ cd homebanking-main
 npm install
 ```
 <br>
-
 ## Usage
 <br>
 

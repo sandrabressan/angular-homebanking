@@ -1,38 +1,31 @@
 # Homebanking
 
-## Sumário
+## Summary
 
-<br>
+- [About](#About)
+- [Installation](#Installation)
+- [Usage](#Usage)
 
-- [Sobre](#Sobre)
-- [Instalação](#Instalação)
-- [Utilização](#Utilização)
+## About
 
-<br>
+Homebanking web application developed with the Angular framework, featuring functionalities such as login, transaction history, depositing and withdrawing funds, authentication services, and logging.
 
-## Sobre
-<br>
-Aplicativo Web de homebanking desenvolvido com o framework Angular, apresentando as funcionalidades de login, lista de movimentos, depositar e retirar fundos, serviços de autenticação e log. 
+## Installation
 
-<br>
+Install the latest version of Node [Node](https://nodejs.org/en/).
 
-## Instalação
-<br>
-
-Instalar a versão mais recente do Node [Node](https://nodejs.org/en/).
-
-Instalar o TypeScript:
+Install TypeScript:
 
 ```
 $ npm install -g typescript
 ```
 
-Instalar o Angular:
+Install Angular:
 ```
 $ npm install -g @angular/cli
 ```
 
-Baixar o projeto e instalar dependências:
+Download the project and install dependencies:
 
 ```
 git clone git@github.com:sandrabressan/homebanking.git
@@ -41,23 +34,24 @@ npm install
 ```
 <br>
 
-## Utilização
+## Usage
 <br>
 
-No terminal rodar o comando:
+In the terminal, run the command:
 
 ```
 $ ng serve
 ```
-Abrir o browser e navegar para o endereço   http://localhost:4200.
 
-Na página principal clicar em **Acessar sua Conta**, você será redirecionado para a página de **Login**.
+Open your browser and navigate to http://localhost:4200.
 
-A página de **Lista de Movimentos** é protegida por um serviço de autenticação.
+On the main page, click **Access Your Account**; you will be redirected to the **Login** page.
 
-Atualmente há 02 usuários cadastrados: Maria e José. Para entrar com estes usuários, é preciso utilizar as seguintes credenciais:
+The **Transaction History** page is protected by an authentication service.
 
-Maria: 
+Currently, there are two registered users: Maria and José. To log in with these users, use the following credentials:
+
+Maria:
 
 ```
 Agência: 1234
@@ -71,14 +65,12 @@ Agência: 5678
 Conta: 98765432-1
 Senha: qwer1234
 ```
-Utilizando qualquer uma destas credenciais você será direcionado para a página **Lista de Movimentos**, onde é mostrado o saldo atual e histórico de transações.
+Using any of these credentials will direct you to the **Transaction History** page, where you can view the current balance and transaction history.
 
-A **Lista de Movimentos** carrega o histórico de transações do usuário usando o serviço **ContaService**, que simula uma requisição para um endpoint HTTP e exibe os 10 últimos movimentos.
+The **Transaction History** page loads the user's transaction history using the **AccountService**, which simulates a request to an HTTP endpoint and displays the last 10 transactions.
 
-Para depositar ou retirar fundos, basta inserir um valor numérico no campo **Insira o valor (R$)** e clicar em **Depositar** ou **Retirar**.
+To deposit or withdraw funds, enter a numeric value in the **Enter the amount (R$)** field and click **Deposit** or **Withdraw**.
 
-Para fazer Log Out clique em **Log Out**.
+To log out, click **Log Out**.
 
-As tentativas de login e transações são registradas por meio do serviço de log, o qual imprime no console e salva os logs criptografados no local storage do browser.
-
-
+Login attempts and transactions are recorded using the logging service, which prints to the console and saves encrypted logs in the browser's local storage.

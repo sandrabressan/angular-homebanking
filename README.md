@@ -46,7 +46,25 @@ http://localhost:4200
 
 On the main page, click **Access Your Account** to access the **Login** page.
 
-The **Transaction History** page is protected by an authentication service. The application includes predefined test users and simulated account data for demonstration purposes.
+The application uses predefined test users and simulated account data for demonstration purposes. There is no database; the user credentials are hardcoded in the application.
+
+### Test Users
+
+#### Maria
+
+```text
+Agência: 1234
+Conta: 12345678-9
+Senha: 1234qwer
+```
+
+#### José
+
+```text
+Agência: 5678
+Conta: 98765432-1
+Senha: qwer1234
+```
 
 After logging in, users can:
 

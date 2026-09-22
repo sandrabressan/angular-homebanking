@@ -88,3 +88,5 @@ Login attempts and transactions are recorded using the logging service, which pr
 ## Project Status
 
 This project is no longer under active development.
+
+**Note:** The application interface is in Portuguese, as it was originally developed for a Portuguese-speaking audience.

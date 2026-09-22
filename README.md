@@ -1,10 +1,14 @@
 # Homebanking
 
+A home banking web application developed with **Angular and TypeScript**.
+
 ## Summary
 
-- [About](#About)
-- [Installation](#Installation)
-- [Usage](#Usage)
+* [About](#about)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Technologies](#technologies)
+* [Project Status](#project-status)
 
 ## About
 
@@ -12,65 +16,57 @@ Homebanking web application developed with the Angular framework, featuring func
 
 ## Installation
 
-Install the latest version of [Node](https://nodejs.org/en/).
+Install the latest version of [Node.js](https://nodejs.org/).
 
-Install TypeScript:
+Install the Angular CLI:
 
-```
-$ npm install -g typescript
-```
-
-Install Angular:
-```
-$ npm install -g @angular/cli
+```bash
+npm install -g @angular/cli
 ```
 
-Download the project and install dependencies:
+Clone the project and install the dependencies:
 
-```
-git clone git@github.com:sandrabressan/homebanking.git
-cd homebanking-main
+```bash
+git clone https://github.com/sandrabressan/angular-homebanking.git
+cd angular-homebanking
 npm install
 ```
 
 ## Usage
 
-<br>
+In the terminal, run:
 
-In the terminal, run the command:
-
-```
-$ ng serve
+```bash
+ng serve
 ```
 
-Open your browser and navigate to http://localhost:4200.
+Open your browser and navigate to:
 
-On the main page, click **Access Your Account**; you will be redirected to the **Login** page.
+http://localhost:4200
 
-The **Transaction History** page is protected by an authentication service.
+On the main page, click **Access Your Account** to access the **Login** page.
 
-Currently, there are two registered users: Maria and José. To log in with these users, use the following credentials:
+The **Transaction History** page is protected by an authentication service. The application includes predefined test users and simulated account data for demonstration purposes.
 
-Maria:
+After logging in, users can:
 
-```
-Agência: 1234
-Conta: 12345678-9
-Senha: 1234qwer
-```
-José:
+* View their current balance
+* View their transaction history
+* Deposit funds
+* Withdraw funds
+* Log out
 
-```
-Agência: 5678
-Conta: 98765432-1
-Senha: qwer1234
-```
-Using any of these credentials will direct you to the **Transaction History** page, where you can view the current balance and transaction history.
+The **Transaction History** page loads transaction data using the `AccountService`, which simulates a request to an HTTP endpoint and displays the user's recent transactions.
 
-The **Transaction History** page loads the user's transaction history using the **AccountService**, which simulates a request to an HTTP endpoint and displays the last 10 transactions.
+Login attempts and transactions are recorded using the logging service, which prints information to the console and stores encrypted logs in the browser's local storage.
 
-To deposit or withdraw funds, enter a numeric value in the **Enter the amount (R$)** field and click **Deposit** or **Withdraw**.
+## Technologies
 
-To log out, click **Log Out**.
+* Angular
+* TypeScript
+* HTML
+* CSS
 
-Login attempts and transactions are recorded using the logging service, which prints to the console and saves encrypted logs in the browser's local storage.
+## Project Status
+
+This project is no longer under active development.
